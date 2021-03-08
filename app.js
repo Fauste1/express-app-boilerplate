@@ -8,8 +8,6 @@ const app = express()
 const indexRouter = require('./routes/index')
 
 app.set('view engine', 'pug')
-// check if below is needed
-app.set('views', __dirname + '/views')
 app.use(express.static('public'))
 app.use(express.urlencoded( {extended: true} ))
 
